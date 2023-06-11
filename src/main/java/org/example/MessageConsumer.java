@@ -11,9 +11,9 @@ import java.time.temporal.ChronoUnit;
 import java.util.Collections;
 import java.util.Map;
 
-class MessageConsumer {
+public class MessageConsumer {
 
-    KafkaConsumer<String, String> kafkaConsumer;
+    public KafkaConsumer<String, String> kafkaConsumer;
 
     public MessageConsumer(String topic, String id) {
         kafkaConsumer = new KafkaConsumer<String, String>(
