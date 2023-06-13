@@ -1,9 +1,9 @@
-package org.example;
+package org.example.GUI;
 
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
-import org.example.Model.Chat;
-import org.example.Model.User;
+import org.example.model.User;
+import org.example.service.UserService;
 
 import javax.swing.*;
 import java.awt.*;
@@ -57,6 +57,10 @@ public class LogFrame extends JFrame {
 
 
             }
+        });
+        REGISTERButton.addActionListener(e ->{
+            this.dispose();
+            SwingUtilities.invokeLater(() -> new RegisterFrame());
         });
     }
 

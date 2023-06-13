@@ -1,4 +1,4 @@
-package org.example.Model;
+package org.example.GUI;
 
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.example.MessageConsumer;
@@ -34,6 +34,8 @@ public class Chat extends JFrame {
         this.add(panel1);
         this.pack();
         this.setVisible(true);
+
+        setSize(800, 600);
 
         TextArea.setEditable(false);
         Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();

@@ -1,6 +1,4 @@
-package org.example.Model;
-
-import lombok.Getter;
+package org.example.model;
 
 
 public class User {

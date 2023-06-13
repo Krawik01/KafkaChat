@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.GUI.LogFrame;
+import org.example.database.DbConnect;
 import org.springframework.kafka.test.EmbeddedKafkaBroker;
 
 import javax.swing.*;

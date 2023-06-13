@@ -1,4 +1,4 @@
-package org.example;
+package org.example.database;
 
 import java.sql.*;
 
@@ -68,5 +68,17 @@ public class DbConnect {
 
 
         return result;
+    }
+
+    public void execUpdateSql(String query){
+        Connection connection = connectToDataBase();
+        try {
+            Statement statement = connection.createStatement();
+            statement.executeUpdate(query);
+            statement.close();
+            connection.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }
